@@ -31,7 +31,7 @@ public class Filters {
     public static final Predicate<Entity> RAIDER = tagFilter(EntityTypeTags.RAIDERS);
     public static final Predicate<Entity> HOSTILE = e -> e instanceof Enemy;
     public static final Predicate<Entity> ANIMAL = e -> e instanceof Animal;
-    public static final Predicate<Entity> BABY = e -> e instanceof AgeableMob ageable && ageable.isBaby();
+    public static final Predicate<Entity> BABY = e -> e instanceof LivingEntity living && living.isBaby();
     public static final Predicate<Entity> PET = e -> e instanceof TamableAnimal;
     public static final Predicate<Entity> SLIME = e -> e instanceof Slime;
     public static final Predicate<Entity> BOSS = null; // No boss check?
